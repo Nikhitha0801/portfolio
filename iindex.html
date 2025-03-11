@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>J. Nikhitha - Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            background: #f3e5f5;
+            color: #333;
+            margin: 0;
+            padding: 0;
+            scroll-behavior: smooth;
+        }
+        .navbar {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            background: linear-gradient(to right, #a792ac, #9575cd, #4fc3f7);
+            padding: 15px 0;
+            text-align: center;
+            z-index: 1000;
+            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+        }
+        .navbar ul {
+            list-style: none;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+        }
+        .navbar ul li a {
+            text-decoration: none;
+            font-size: 18px;
+            font-weight: bold;
+            color: white;
+            transition: color 0.3s;
+            cursor: pointer;
+        }
+        .navbar ul li a:hover {
+            color: #900db8;
+        }
+        section {
+            padding: 80px 50px;
+            margin-top: 50px;
+            text-align: center;
+            border-radius: 10px;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        .skills-section {
+            background: #e1bee7;
+            padding: 50px 20px;
+            text-align: center;
+        }
+        .skills-container {
+            display: flex;
+            justify-content: center;
+            gap: 40px;
+        }
+        .skills-box {
+            width: 40%;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+        }
+        .tech-skills {
+            background: #d1c4e9;
+        }
+        .soft-skills {
+            background: #b2ebf2;
+        }
+        .contact-box {
+            width: 50%;
+            margin: auto;
+            padding: 20px;
+            border-radius: 10px;
+            background: #e3f2fd;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <ul>
+            <li><a onclick="showSection('home')">🏠 Home</a></li>
+            <li><a onclick="showSection('about')">⭐ About</a></li>
+            <li><a onclick="showSection('education')">🎓 Education</a></li>
+            <li><a onclick="showSection('skills')">💻 Skills</a></li>
+            <li><a onclick="showSection('projects')">📁 Projects</a></li>
+            <li><a onclick="showSection('contact')">📩 Contact</a></li>
+        </ul>
+    </nav>
+  <section id="home" style="background: #f5dafa;">
+        <h2>Hello, I'm Jinka Nikhitha</h2>
+        <p>An engineering student passionate about coding and learning.</p>
+        <img src="profile.jpg" alt="Jinka Nikhitha" class="profile-photo">
+    </section>
+
+    <section id="about" style="background: #b7dac5;">
+        <h2>⭐ About Me</h2>
+        <p>Hi, I am Jinka Nikhitha, an engineering student at GITAM University with a passion for technology and innovation.
+        </p>
+        <p>
+            I love transforming ideas into reality through code, and I'm currently sharpening my skills in Java, Python, and C programming.
+        </p>
+        <p>
+            Beyond academics, I actively participate in workshops and volunteering experiences, which help me grow both technically and personally.
+        </p>
+        <p>
+            I believe in continuous learning, creativity, and problem-solving, and I'm always eager to take on new challenges.
+        </p>
+    </section>
+
+    <section id="education" style="background: #c5cae9;">
+        <h2>🎓 Education</h2>
+        <p>📌 <strong>Present:</strong> Engineering at GITAM University, Bengaluru.</p>
+        <p>📌 <strong>2021 - 2023:</strong> Intermediate at SV Junior College, Dharmavaram.</p>
+        <p>📌 <strong>2011 - 2021:</strong> Schooling at Sri Ushodaya English Medium High School, Dharmavaram.</p>
+    </section>
+  
+
+    <section id="skills" class="skills-section">
+        <h2>💻 Technical & Soft Skills</h2>
+        <div class="skills-container">
+            <div class="skills-box tech-skills">
+                <h2>🔧 Technical Skills</h2>
+                <p>🖥 Java</p>
+                <p>🐍 Python</p>
+                <p>💾 C Programming</p>
+                <p>📂 Data Structures</p>
+                <p>🌐 HTML</p>
+                <p>🎨 CSS</p>
+                <p>📜 JavaScript</p>
+            </div>
+            <div class="skills-box soft-skills">
+                <h2>🌟 Soft Skills</h2>
+                <p>💡 Problem-Solving</p>
+                <p>👥 Teamwork</p>
+                <p>🔄 Adaptability</p>
+                <p>🗣 Communication</p>
+                <p>🎨 Creativity</p>
+            </div>
+        </div>
+    </section>
+    
+  <section id="projects" style="background: #d1c4e9;">
+        <h2>📁 Projects</h2>
+        <p>✅ I completed my Cisco project, including:</p>
+        <p>🔹 Network Basics</p>
+        <p>🔹 Introduction to Cisco Packet Tracer</p>
+        <p>🔹 Exploring Networking with Cisco Packet Tracer</p>
+    </section>
+
+
+    <section id="contact" style="background: #ffebee;">
+        <h2>📩 Contact Me</h2>
+        <div class="contact-box">
+            <p>📧 Email: <a href="mailto:nikhithajinka@gmail.com">nikhithajinka@gmail.com</a></p>
+            <p>💻 GitHub: <a href="https://github.com/Nikhitha0801" target="_blank">Nikhitha0801</a></p>
+            <p>🔗 LinkedIn: <a href="https://linkedin.com/in/Nikhitha-Jinka" target="_blank">Nikhitha Jinka</a></p>
+        </div>
+    </section>
+    <script>
+    function showSection(sectionId) {
+        let sections = document.querySelectorAll("section");
+        sections.forEach(section => section.style.display = "none");
+        document.getElementById(sectionId).style.display = "block";
+    }
+    </script>
+
+
+    
+</body>
+</html>
